@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <style>
+        h1 {
+        text-align: center;
+        background-color: red;
+        color: yellow;
+    }
+    </style>
+    <h3>Add</h3> <style> h3 { color: blue; } </style>
+    <input type="text" id="num1" /> +
+    <input type="text" id="num2" /> =
+    <input type="text" id="sum" />
+    <button id="calc">calculate</button>
+    <script>
+        document.getElementById('calc').onclick = function () {
+            let num1 = Number(document.getElementById('num1').value);
+            let num2 = Number(document.getElementById('num2').value);
+
+            let sum = num1 + num2;
+            document.getElementById('sum').value = sum;
+        }
+    </script>
+
+
+    <h3>Substract</h3> 
+    <input type="text" id="n1" /> -
+    <input type="text" id="n2" /> =
+    <input type="text" id="sum0" />
+    <button id="calc0">calculate</button>
+
+    <script>
+        document.getElementById('calc0').onclick = function () {
+            let n1 = Number(document.getElementById('n1').value);
+            let n2 = Number(document.getElementById('n2').value);
+
+            let sum0 = n1 - n2;
+            document.getElementById('sum0').value = sum0;
+        }
+    </script>
+
+
+    <h3>Multiply</h3>
+    <input type="text" id="mltp1" /> *
+    <input type="text" id="mltp2" /> =
+    <input type="text" id="result" />
+    <button id="calc012">calculate</button>
+
+    <script>
+        document.getElementById('calc012').onclick = function () {
+            let mltp1 = Number(document.getElementById('mltp1').value);
+            let mltp2 = Number(document.getElementById('mltp2').value);
+
+            let result = mltp1 * mltp2;
+            document.getElementById('result').value = result;
+        }
+    </script>
+
+
+    <h3>Devide</h3>
+    <input type="text" id="dvd1" /> /
+    <input type="text" id="dvd2" /> =
+    <input type="text" id="result0" />
+    <button id="calc012dvd">calculate</button>
+
+    <script>
+        document.getElementById('calc012dvd').onclick = function () {
+            let dvd1 = Number(document.getElementById('dvd1').value);
+            let dvd2 = Number(document.getElementById('dvd2').value);
+
+            let result0 = dvd1 / dvd2;
+            document.getElementById('result0').value = result0;
+        }
+    </script>
+</body>
+</html>
